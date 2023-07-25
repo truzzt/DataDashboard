@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AssetViewerComponent} from '../edc-demo/components/asset-viewer/asset-viewer.component';
 import {CatalogBrowserComponent} from '../edc-demo/components/catalog-browser/catalog-browser.component';
+import {CatalogBrowserConfirmationComponent} from '../edc-demo/components/catalog-browser-confirmation/catalog-browser-confirmation.component';
 import {IntroductionComponent} from '../edc-demo/components/introduction/introduction.component';
 import {
   ContractDefinitionViewerComponent
@@ -22,6 +23,11 @@ export const routes: Routes = [
     path: 'catalog-browser',
     component: CatalogBrowserComponent,
     data: {title: 'Catalog Browser', icon: ''}
+  },
+  {
+    path: 'catalog-browser-confirmation',
+    component: CatalogBrowserConfirmationComponent,
+    data: {title: 'Catalog Browser Confirmation', icon: ''}
   },
   {
     path: 'contracts',
