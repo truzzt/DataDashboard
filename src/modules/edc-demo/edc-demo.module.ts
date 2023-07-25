@@ -20,6 +20,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatListModule} from '@angular/material/list';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {CatalogBrowserComponent} from './components/catalog-browser/catalog-browser.component';
+import {CatalogBrowserConfirmationComponent} from '.components/catalog-browser-confirmation/catalog-browser-confirmation.component';
 import {TransferHistoryViewerComponent} from './components/transfer-history/transfer-history-viewer.component';
 import {
   ContractDefinitionViewerComponent
@@ -74,6 +75,7 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
   ],
   declarations: [
     CatalogBrowserComponent,
+    CatalogBrowserConfirmationComponent,
     TransferHistoryViewerComponent,
     ContractDefinitionViewerComponent,
     AssetViewerComponent,
@@ -95,6 +97,7 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
   ],
   exports: [
     CatalogBrowserComponent,
+    CatalogBrowserConfirmationComponent,
     TransferHistoryViewerComponent,
     ContractDefinitionViewerComponent,
     AssetViewerComponent,
