@@ -21,6 +21,7 @@ import {Configuration} from "../mgmt-api-client";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {EdcApiKeyInterceptor} from "./edc.apikey.interceptor";
 import {environment} from "../../environments/environment";
+import { ThemeService } from '../../theme.service';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {environment} from "../../environments/environment";
     NavigationComponent,
   ],
   providers: [
+    [ThemeService],
     {
       provide: APP_INITIALIZER,
       useFactory: (configService: AppConfigService) => () => configService.loadConfig(),

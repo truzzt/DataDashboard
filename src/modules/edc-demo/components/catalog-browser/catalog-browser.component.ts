@@ -9,6 +9,8 @@ import {Router} from "@angular/router";
 import {TransferProcessStates} from "../../models/transfer-process-states";
 import {ContractOffer} from "../../models/contract-offer";
 import {NegotiationResult} from "../../models/negotiation-result";
+import { ThemeService } from '../../../../theme.service'; 
+import { Theme } from '@mui/material/styles'; 
 
 interface RunningTransferProcess {
   processId: string;
@@ -33,6 +35,7 @@ export class CatalogBrowserComponent implements OnInit {
 
   constructor(private apiService: CatalogBrowserService,
               public dialog: MatDialog,
+              private themeService: ThemeService,
               private router: Router,
               private notificationService: NotificationService,
               @Inject('HOME_CONNECTOR_STORAGE_ACCOUNT') private homeConnectorStorageAccount: string) {
@@ -52,6 +55,10 @@ export class CatalogBrowserComponent implements OnInit {
 
   onSearch() {
     this.fetch$.next(null);
+  }
+
+  get theme(): Theme {
+    return this.themeService.getTheme();
   }
 
   onNegotiateClicked(contractOffer: ContractOffer) {
