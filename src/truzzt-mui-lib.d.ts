@@ -1,4 +1,4 @@
-declare module '@truzzt/mui-lib' {
+declare module '@truzzt/mui-lib/truzztTheme' {
   import { Theme } from '@mui/material/styles'; // Import the necessary types
 
   // Declare the type for the 'theme' object

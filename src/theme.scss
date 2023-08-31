@@ -31,7 +31,7 @@ $theming-material-components-theme: mat-dark-theme(
   @include angular-material-theme($theming-material-components-theme);
 }
 
-$custom-typography: mat.define-typography-config($font-family: 'Montserrat');
+$custom-typography: mat.define-typography-config($font-family: 'Roboto');
 @include mat.core($custom-typography);
 
 
@@ -43,8 +43,13 @@ $custom-typography: mat.define-typography-config($font-family: 'Montserrat');
 // truzzt design
 
 .theme-2 .mat-drawer {
-  background: #0F0F0F;
+  background: #202020;
   border: none;
+  width: 215px !important;
+  height: 555px;
+  border-radius: 16px;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 
 .theme-2 .mat-toolbar.mat-primary {

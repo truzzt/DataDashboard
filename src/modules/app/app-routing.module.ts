@@ -32,7 +32,7 @@ export const routes: Routes = [
   {
     path: 'contracts',
     component: ContractViewerComponent,
-    data: {title: 'Contracts', icon: ''}
+    data: {title: 'Connectors', icon: ''}
   },
   {
     path: 'transfer-history',
